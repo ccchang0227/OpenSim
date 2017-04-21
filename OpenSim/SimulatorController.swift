@@ -51,7 +51,7 @@ class SimulatorController: NSObject {
                     
                     // parse out only the iOS os
                     // then parse through the devices for that OS
-                    let filtered = osVersions.filter { $0.0.contains("iOS") }
+                    let filtered = osVersions.filter { $0.0.contains("iOS") || $0.0.contains("tvOS") }
                     
                     for os in filtered {
                         // os.0 is iOS version ex "iOS 9.2"
